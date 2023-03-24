@@ -1,0 +1,4 @@
+configuration {
+font: "hack 13";
+}
+@theme "/usr/share/rofi/themes/Pop-Dark.rasi"
