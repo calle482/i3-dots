@@ -17,3 +17,6 @@ fi
 #export WLR_RENDERER=vulkan
 export PATH=$PATH:/home/calle/.local/bin
 alias config='/usr/bin/git --git-dir=/home/calle/.cfg/ --work-tree=/home/calle'
+
+
+bind -s 'set completion-ignore-case on'
