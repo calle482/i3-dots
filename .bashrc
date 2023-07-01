@@ -20,3 +20,13 @@ alias config='/usr/bin/git --git-dir=/home/calle/.cfg/ --work-tree=/home/calle'
 
 
 bind -s 'set completion-ignore-case on'
+
+
+#alias
+alias airvpn-down="systemctl stop wg-quick@wg"
+alias airvpn-up="systemctl start wg-quick@wg"
+
+#firefox wayland stuff
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+fi

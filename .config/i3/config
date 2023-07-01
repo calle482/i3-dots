@@ -238,7 +238,6 @@ bindsym $mod+x move workspace to output HDMI-0 DP-2 DP-4
 exec_always xrandr --output HDMI-0 --mode 1920x1080 --rate 165 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --rate 280 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-4 --mode 1920x1080 --rate 165 --pos 3840x0 --rotate normal --output DP-5 --off
 exec_always feh --bg-scale /home/$USER/.config/i3/san_fransisco.png
 exec_always picom #--experimental-backends
-#exec_always /home/$USER/.config/i3/scripts/xborder/xborders
 exec discord --enable-gpu-rasterization
 exec sleep 10 && /home/$USER/.config/i3/scripts/start_obs_with_replay_buffer.sh
 exec sleep 5 && /home/$USER/.config/i3/scripts/polybar.sh
@@ -254,6 +253,8 @@ exec_always --no-startup-id /home/$USER/.config/i3/alternating_layouts.py
 exec /home/$USER/.config/i3/scripts/cpu_performance.sh
 exec /home/$USER/.config/i3/scripts/beta_backup.sh
 exec qbittorrent
+exec /home/$USER/.config/i3/scripts/xborder.sh
+exec xfce4-power-manager
 #Disable mouse acceleration
 #exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
 
@@ -264,6 +265,7 @@ assign [class="obs"] $ws10
 assign [class="firefox"] $ws1
 assign [class="Alacritty"] $ws5
 assign [class="Steam"] $ws6
+assign [class="steam"] $ws6
 assign [class="Lutris"] $ws2
 assign [class="csgo_linux64"] $ws6
 assign [class="battle.net.exe"] $ws2
