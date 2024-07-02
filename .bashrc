@@ -30,3 +30,5 @@ alias airvpn-up="systemctl start wg-quick@wg"
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
 fi
+
+export TERM=xterm-256color

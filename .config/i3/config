@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -229,19 +229,19 @@ workspace $ws5 output DP-4
 
 #Cycle programs between workspaces
 #bindsym $mod+x move workspace to output DP-5 DP-2 HDMI-0
-bindsym $mod+x move workspace to output HDMI-0 DP-2 DP-4
+bindsym $mod+x move workspace to output DP-0 DP-2 DP-4
 
 #Execute programs
 #exec_always xrandr --output HDMI-0 --mode 1920x1080 --pos 3840x0 --rotate normal --set TearFree on --output DP-0 --off --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --rate 280 --pos 1920x0 --rotate normal --set TearFree on --output DP-3 --off --output DP-4 --off --output DP-5 --mode 1920x1080 --pos 0x0 --rotate normal --set TearFree on
 #exec_always xrandr --output HDMI-0 --mode 1920x1080 --rate 165  --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --pos 1920x0 --rate 280  --rotate normal --output DP-3 --off --output DP-4 --mode 1920x1080 --rate 144 --pos 3840x0 --rotate normal --output DP-5 --off
 #exec_always xrandr --output HDMI-0 --off --output DP-0 --mode 1920x1080 --rate 165 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --rate 280 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-4 --mode 1920x1080 --rate 165 --pos 3840x0 --rotate normal --output DP-5 --off
-exec_always xrandr --output HDMI-0 --mode 1920x1080 --rate 165 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --rate 280 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-4 --mode 1920x1080 --rate 165 --pos 3840x0 --rotate normal --output DP-5 --off
-exec_always feh --bg-scale /home/$USER/.config/i3/san_fransisco.png
-exec_always picom #--experimental-backends
-exec discord --enable-gpu-rasterization
+exec_always xrandr --output DP-0 --mode 1920x1080 --rate 165 --pos 0x0 --rotate normal --output HDMI-0 --off --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --rate 280 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-4 --mode 1920x1080 --rate 165 --pos 3840x0 --rotate normal --output DP-5 --off
+exec_always feh --bg-scale /home/$USER/.config/i3/tracer_ow.jpeg
+exec_always picom --no-vsync
+exec com.discordapp.Discord
 exec sleep 10 && /home/$USER/.config/i3/scripts/start_obs_with_replay_buffer.sh
 exec sleep 5 && /home/$USER/.config/i3/scripts/polybar.sh
-exec spotify
+exec com.spotify.Client
 exec sleep 2 && firefox
 exec alacrity
 exec steam
@@ -250,9 +250,9 @@ exec alacritty
 exec --no-startup-id /usr/lib/gsd-xsettings
 exec flameshot
 exec_always --no-startup-id /home/$USER/.config/i3/alternating_layouts.py
-exec /home/$USER/.config/i3/scripts/cpu_performance.sh
+#exec /home/$USER/.config/i3/scripts/cpu_performance.sh
 exec /home/$USER/.config/i3/scripts/beta_backup.sh
-exec qbittorrent
+#exec qbittorrent
 exec /home/$USER/.config/i3/scripts/xborder.sh
 exec xfce4-power-manager
 #Disable mouse acceleration
