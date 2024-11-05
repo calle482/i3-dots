@@ -236,7 +236,8 @@ bindsym $mod+x move workspace to output DP-0 DP-2 DP-4
 #exec_always xrandr --output HDMI-0 --mode 1920x1080 --rate 165  --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --pos 1920x0 --rate 280  --rotate normal --output DP-3 --off --output DP-4 --mode 1920x1080 --rate 144 --pos 3840x0 --rotate normal --output DP-5 --off
 #exec_always xrandr --output HDMI-0 --off --output DP-0 --mode 1920x1080 --rate 165 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --rate 280 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-4 --mode 1920x1080 --rate 165 --pos 3840x0 --rotate normal --output DP-5 --off
 exec_always xrandr --output DP-0 --mode 1920x1080 --rate 165 --pos 0x0 --rotate normal --output HDMI-0 --off --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --rate 280 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-4 --mode 1920x1080 --rate 165 --pos 3840x0 --rotate normal --output DP-5 --off
-exec_always feh --bg-scale /home/$USER/.config/i3/tracer_ow.jpeg
+#exec_always feh --bg-scale /home/$USER/.config/i3/tracer_ow.jpeg
+exec_always feh --bg-scale /home/$USER/.config/i3/deku5.jpg
 exec_always picom --no-vsync
 exec com.discordapp.Discord
 exec sleep 10 && /home/$USER/.config/i3/scripts/start_obs_with_replay_buffer.sh
