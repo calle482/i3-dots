@@ -1,10 +1,5 @@
 # My i3-dotfiles
 My dotfiles for i3 and programs that I use.
 
-Needed Packages
----------------
-`i3-gaps picom alacritty polybar rofi feh papirus-icon-theme`
-
-Optional Packages
------------------
-<a href="https://github.com/spicetify/spicetify-cli" >Spicetify</a>
+<img src="/.config/i3/example_1screen.png" alt="Example picture" title="Example picture of 1 monitor">
+<img src="/.config/i3/example_multimonitor.png" alt="Example picture" title="Example picture of multiple monitors">
